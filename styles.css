@@ -10,6 +10,9 @@
   --accent-hover: #2980e0;
   --border: rgba(0, 0, 0, 0.08);
   --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --footer-bg: #f0f0f4;
+  --footer-text: #6b6b70;
+  --footer-text-active: #3a3a3e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,6 +25,9 @@
     --accent-hover: #8ec4ff;
     --border: rgba(255, 255, 255, 0.1);
     --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+    --footer-bg: #121213;
+    --footer-text: #8e8e93;
+    --footer-text-active: #c7c7cc;
   }
 }
 
@@ -45,10 +51,14 @@ body {
   padding: 24px 20px 48px;
 }
 
-/* Footer-Navigation (unten, klein) */
+/* Footer-Navigation – Kleingedrucktes wie am Ende typischer Homepages */
 nav.footer-nav {
-  margin-top: 40px;
-  padding-top: 20px;
+  margin-top: 48px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -48px;
+  padding: 20px 20px 32px;
+  background: var(--footer-bg);
   border-top: 1px solid var(--border);
   text-align: center;
 }
@@ -60,12 +70,13 @@ nav.footer-nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 8px 16px;
-  font-size: 0.8rem;
+  gap: 6px 12px;
+  font-size: 0.7rem;
+  letter-spacing: 0.01em;
 }
 
 nav.footer-nav li a {
-  color: var(--text-secondary);
+  color: var(--footer-text);
   text-decoration: none;
 }
 
@@ -75,7 +86,7 @@ nav.footer-nav li a:hover {
 }
 
 nav.footer-nav li a.active {
-  color: var(--text);
+  color: var(--footer-text-active);
   font-weight: 500;
 }
 
