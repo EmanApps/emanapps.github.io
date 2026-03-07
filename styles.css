@@ -10,9 +10,6 @@
   --accent-hover: #2980e0;
   --border: rgba(0, 0, 0, 0.08);
   --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
-  --footer-bg: #f0f0f4;
-  --footer-text: #6b6b70;
-  --footer-text-active: #3a3a3e;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,9 +22,6 @@
     --accent-hover: #8ec4ff;
     --border: rgba(255, 255, 255, 0.1);
     --card-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-    --footer-bg: #121213;
-    --footer-text: #8e8e93;
-    --footer-text-active: #c7c7cc;
   }
 }
 
@@ -51,45 +45,6 @@ body {
   padding: 24px 20px 48px;
 }
 
-/* Footer-Navigation – Kleingedrucktes wie am Ende typischer Homepages */
-nav.footer-nav {
-  margin-top: 48px;
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-bottom: -48px;
-  padding: 20px 20px 32px;
-  background: var(--footer-bg);
-  border-top: 1px solid var(--border);
-  text-align: center;
-}
-
-nav.footer-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 6px 12px;
-  font-size: 0.7rem;
-  letter-spacing: 0.01em;
-}
-
-nav.footer-nav li a {
-  color: var(--footer-text);
-  text-decoration: none;
-}
-
-nav.footer-nav li a:hover {
-  color: var(--accent);
-  text-decoration: underline;
-}
-
-nav.footer-nav li a.active {
-  color: var(--footer-text-active);
-  font-weight: 500;
-}
-
 /* Header */
 h1 {
   font-size: 1.75rem;
@@ -102,6 +57,15 @@ h1 {
   color: var(--text-secondary);
   font-size: 1rem;
   margin-bottom: 32px;
+}
+
+.subtitle-link {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.subtitle-link:hover {
+  color: var(--accent);
 }
 
 /* App cards on main page */
@@ -165,10 +129,13 @@ ul.info-list li {
   margin-bottom: 6px;
 }
 
-/* Footer / back link */
+/* Back link */
+.back-link-wrap {
+  margin-top: 32px;
+}
+
 .back-link {
   display: inline-block;
-  margin-top: 24px;
   padding: 10px 16px;
   background: var(--bg-card);
   border-radius: 10px;
