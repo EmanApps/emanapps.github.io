@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#4092f2">
-  <title>Datenschutz & Rechtliches – Termine</title>
+  <title>Datenschutz & Rechtliches – myTermine</title>
   <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
@@ -13,39 +13,58 @@
 
     <div class="card">
       <h2>1. Verantwortlicher / Kontakt</h2>
-      <p>Verantwortlich für die App „Termine“:</p>
-      <p><strong>Emrullah Furkan Ünver</strong><br>E-Mail: <a href="mailto:contact.emanapp@gmail.com">contact.emanapp@gmail.com</a></p>
+      <p>Verantwortlich für die App „myTermine":</p>
+      <p><strong>Emanapps</strong><br>E-Mail: <a href="mailto:contact.emanapp@gmail.com">contact.emanapp@gmail.com</a></p>
     </div>
 
     <div class="card">
-      <h2>2. Datenschutz</h2>
-      <p>Die App „Termine“ speichert alle Daten ausschließlich lokal auf Ihrem Gerät.</p>
+      <h2>2. Datenspeicherung</h2>
+      <p>Die App „myTermine" speichert alle Daten <strong>ausschließlich lokal auf Ihrem Gerät</strong>. Es findet keine Übertragung an Server, Cloud-Dienste oder Dritte statt.</p>
       <p>Gespeicherte Daten können enthalten:</p>
       <ul class="info-list">
         <li>Termine (Titel, Datum, Uhrzeit, Notizen, Kategorien, Erinnerungen)</li>
+        <li>Personen und zugeordnete Informationen</li>
         <li>Anhänge wie Fotos oder Dokumente, die Sie selbst hinzufügen</li>
-        <li>optional Spracheingaben zur Erstellung von Notizen</li>
+        <li>Notizen, die per Spracheingabe erstellt wurden</li>
       </ul>
-      <p>Es findet keine Übertragung dieser Daten an Server, Cloud-Dienste oder Dritte statt. Die Daten verlassen Ihr Gerät nur, wenn Sie diese selbst exportieren oder teilen.</p>
+      <p>Die Daten verlassen Ihr Gerät ausschließlich, wenn Sie diese selbst über die Export-Funktion teilen. Exportierte Backup-Dateien werden dabei verschlüsselt.</p>
     </div>
 
     <div class="card">
-      <h2>3. Berechtigungen</h2>
+      <h2>3. Schutz vor iCloud Backup</h2>
+      <p>Alle Anhänge (Fotos, Dokumente) sowie die App-Daten sind technisch vom automatischen iCloud Backup ausgeschlossen. Selbst wenn iCloud Backup auf Ihrem iPhone aktiviert ist, werden diese Daten nicht in die iCloud übertragen.</p>
+      <p>Lediglich ein technischer Widget-Cache (für das Home-Screen-Widget) kann im iCloud Backup enthalten sein – dieser enthält ausschließlich Basisdaten der nächsten Termine und ist für die App-Funktion nicht kritisch.</p>
+    </div>
+
+    <div class="card">
+      <h2>4. Backup-Verschlüsselung</h2>
+      <p>Wenn Sie Ihre Daten über die Export-Funktion sichern, wird die Backup-Datei mit einem von Ihnen gewählten Passwort verschlüsselt. Die Verschlüsselung erfolgt mit dem Industriestandard AES-256 und einer PBKDF2-Schlüsselableitung (600.000 Iterationen, HMAC-SHA256) über Apples CommonCrypto-Framework. Ohne das Passwort ist die Datei nicht lesbar.</p>
+    </div>
+
+    <div class="card">
+      <h2>5. Berechtigungen</h2>
       <p>Die App kann folgende Berechtigungen anfragen, um bestimmte Funktionen bereitzustellen:</p>
       <ul class="info-list">
         <li><strong>Benachrichtigungen:</strong> Erinnerungen an Termine</li>
-        <li><strong>Kamera / Fotos:</strong> Anhänge zu Terminen hinzufügen</li>
-        <li><strong>Mikrofon / Spracherkennung:</strong> Spracheingabe für Notizen</li>
+        <li><strong>Kamera / Fotos:</strong> Anhänge zu Terminen und Personen hinzufügen</li>
+        <li><strong>Mikrofon / Spracherkennung:</strong> Spracheingabe für Notizen – ausschließlich auf dem Gerät verarbeitet, keine Übertragung an Server</li>
+        <li><strong>Kalender:</strong> Termine optional zum Apple Kalender oder Google Kalender hinzufügen</li>
       </ul>
-      <p>Diese Berechtigungen können jederzeit in den iOS-Einstellungen geändert oder entzogen werden.</p>
+      <p>Alle Berechtigungen sind optional und können jederzeit in den iOS-Einstellungen geändert oder entzogen werden.</p>
+      <p>Beim Hinzufügen von Fotos werden Metadaten wie GPS-Koordinaten oder Geräteinformationen (EXIF-Daten) automatisch entfernt und nicht gespeichert.</p>
     </div>
 
     <div class="card">
-      <h2>4. Haftung</h2>
+      <h2>6. Keine Drittanbieter</h2>
+      <p>Die App enthält keine Analyse-Tools, Werbenetzwerke, Crash-Reporter oder sonstige SDKs von Drittanbietern. Es werden keine Nutzungsstatistiken, Gerätedaten oder Verhaltensdaten erhoben oder übermittelt.</p>
+    </div>
+
+    <div class="card">
+      <h2>7. Haftung</h2>
       <p>Die App wird ohne Gewähr bereitgestellt. Es wird keine Garantie dafür übernommen, dass die App oder ihre Erinnerungsfunktionen jederzeit fehlerfrei oder unterbrechungsfrei funktionieren. Der Anbieter haftet nicht für Schäden oder Folgen, die aus der Nutzung der App entstehen, soweit gesetzlich zulässig.</p>
     </div>
 
-    <p class="footer-note">Zuletzt aktualisiert: 6. März 2026</p>
+    <p class="footer-note">Zuletzt aktualisiert: 15. März 2026</p>
   </div>
 </body>
 </html>
